@@ -1,0 +1,106 @@
+/*
+ *= require store/spree_frontend
+*/
+@import "foundation/components/global";
+$row-width: 60em;
+$input-font-size: emCalc(12px);
+$topbar-margin-bottom: emCalc(0px);
+$button-lrg: emCalc(16px) !default;
+$button-border-width: 1px;
+$primary-color: #f08f00;
+$body-bg: #f3f3f3 !important;
+$topbar-bg: #f08f00;
+@import 'foundation';
+//@import 'font-awesome';
+
+/* Cancel out default spree styles */
+input[type="submit"].large, input[type="button"].large,
+input[type="reset"].large, button.large, a.button.large {
+  @include button;
+}
+
+input[type="submit"], input[type="button"],
+input[type="reset"], button, a.button {
+  @include button;
+}
+
+//
+//@media screen{
+//  .row {
+//    margin-bottom: 20px;
+//  }
+//
+//  .clearfix:before, .clearfix:after, .row:before, .row:after {
+//    content: ' 0020';
+//    display: block;
+//    overflow: hidden;
+//    visibility: hidden;
+//    width: 0;
+//    height: 0;
+//  }
+//
+//  .row:after, .clearfix:after {
+//    clear: both;
+//  }
+//
+//  .container {
+//    position: relative;
+//    /*width: 960px; overwritten in bootstrap */
+//    margin: 0 auto;
+//    padding: 0;
+//  }
+//
+//  .container:after {
+//    height: 0;
+//    visibility: hidden;
+//    /* overwritten in bootstrap */
+//    /*content: " 0020";*/
+//    /*display: block;*/
+//    /*clear: both;*/
+//  }
+//
+//  .row, .clearfix {
+//    zoom: 1;
+//  }
+//
+//  .container, .row {
+//    margin-left: auto;
+//    margin-right: auto;
+//  }
+//}
+//
+//
+//label {
+//  display: inline-block;
+//}
+//
+//p {
+//  padding: 0px;
+//}
+//
+//#checkout-summary {
+//  margin-left: 10px;
+//}
+//
+//#clear_cart_link {
+//  line-height: 30px;
+//}
+//
+//#products li.alpha {
+//  margin-left: 0px;
+//}
+//
+//.add-to-cart input,
+//.edit_order input {
+//  margin-bottom: 0px;
+//}
+//
+//.steps-data {
+//  .alpha {
+//    margin-left: 20px !important;
+//  }
+//
+//  .omega {
+//    margin-left: 10px !important;
+//  }
+//}
