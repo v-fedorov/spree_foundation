@@ -2,14 +2,38 @@
  *= require store/spree_frontend
 */
 @import "foundation/components/global";
-$row-width: 60em;
+$row-width: 65em;
 $input-font-size: emCalc(12px);
+
 $topbar-margin-bottom: emCalc(0px);
+$topbar-bg: #fff;
+$topbar-dropdown-bg: #fff;
+$topbar-height: 65px;
+$topbar-link-color: #404040;
+//$topbar-link-font-size: emCalc(25px);
+$topbar-dropdown-bg: #fff;
+$topbar-dropdown-link-color: #404040;
+
 $button-lrg: emCalc(16px) !default;
-$button-border-width: 1px;
-$primary-color: #f08f00;
+$button-border-width: 0px;
+$button-font-color-alt: #fff;
+$button-font-color-alt: #fff;
+
+$primary-color: #b7b7b7;
+$secondary-color: #e89d31;
 $body-bg: #f3f3f3 !important;
-$topbar-bg: #f08f00;
+$reveal-default-width: 30%;
+
+$panel-bg: #fff;
+$panel-padding: emCalc(0px);
+$panel-border-size: 3px;
+$panel-function-factor: 23.3%;
+$panel-border-color: darken($primary-color, $panel-function-factor);
+$panel-margin-bottom: emCalc(13px);
+
+$label-padding: emCalc(6px) emCalc(10px) emCalc(6px);
+$label-font-sizing: emCalc(18px);
+$label-font-color: #fff;
 @import 'foundation';
 //@import 'font-awesome';
 
